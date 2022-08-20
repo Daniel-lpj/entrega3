@@ -15,8 +15,8 @@ const Repositorio = () => {
         <>
             <h1>Lista de usuários no Github</h1>
             <ul>
-                {usuarios.map((usuario, index) => 
-                    <li key={index}>{usuario.login}</li>
+                {usuarios.map((usuario) => 
+                    <li key={usuario.id}>{usuario.login}</li>
                 )}
             </ul>
         </>
